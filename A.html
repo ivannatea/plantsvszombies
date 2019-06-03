@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<style type="text/css">
+		img{
+			width: 100px;
+			position: absolute;
+			display: none;
+			
+		}
+	</style>
+</head>
+<body>
+	<div style="background-image: url(game.png); height: 1000px; background-size: 100% 100%">
+		<img class="flower" src="sunflower.png"  style=" margin-left: 25%; display: block;">
+		<img class="flower2" src="sunflower.png"  style=" margin-left: 20%; display: block;">
+			
+		<!--цветы 1 ряд-->
+		<img class="fl" src="sunflower.png"  style=" margin-left: 33%; margin-top: 13%;">
+		<img class="fl" src="sunflower.png"  style=" margin-left: 33%; margin-top: 19%;">
+		<img class="fl" src="sunflower.png"  style=" margin-left: 33%; margin-top: 25%;">
+		<img class="fl" src="sunflower.png"  style=" margin-left: 33%; margin-top: 31%;">
+		<img class="fl" src="sunflower.png"  style=" margin-left: 33%; margin-top: 37%;">
+		<button class="flower_btn" style="color: red; font-weight: bold; position: absolute; margin-left: 33%; margin-top: 17%; ">PLANT</button>	
+		<button class="flower_btn" style="color: red; font-weight: bold; position: absolute; margin-left: 33%; margin-top: 23%; ">PLANT</button>
+		<button class="flower_btn" style="color: red; font-weight: bold; position: absolute; margin-left: 33%; margin-top: 29%; ">PLANT</button>
+		<button class="flower_btn" style="color: red; font-weight: bold; position: absolute;  margin-left: 33%; margin-top: 35%; ">PLANT</button>
+		<button class="flower_btn" style="color: red; font-weight: bold; position: absolute; margin-left: 33%; margin-top: 41%; ">PLANT</button>
+
+		<!--цветы 2 ряд-->
+		<img class="fl" src="sunflower.png"  style=" margin-left: 40%; margin-top: 13%; ">
+		<img class="fl" src="sunflower.png"  style=" margin-left: 40%; margin-top: 19%; ">
+		<img class="fl" src="sunflower.png"  style=" margin-left: 40%; margin-top: 25%; ">
+		<img class="fl" src="sunflower.png"  style=" margin-left: 40%; margin-top: 31%; ">
+		<img class="fl" src="sunflower.png"  style=" margin-left: 40%; margin-top: 37%; ">
+		<button class="flower_btn" style="color: red; font-weight: bold; position: absolute; margin-left: 40%; margin-top: 17%; ">PLANT</button>	
+		<button class="flower_btn" style="color: red; font-weight: bold; position: absolute; margin-left: 40%; margin-top: 23%; ">PLANT</button>
+		<button class="flower_btn" style="color: red; font-weight: bold; position: absolute; margin-left: 40%; margin-top: 29%; ">PLANT</button>
+		<button class="flower_btn" style="color: red; font-weight: bold; position: absolute;  margin-left: 40%; margin-top: 35%; ">PLANT</button>
+		<button class="flower_btn" style="color: red; font-weight: bold; position: absolute; margin-left: 40%; margin-top: 41%; ">PLANT</button>
+
+
+		
+	</div>
+
+<script>
+	let buttons = document.querySelectorAll(".flower_btn");
+	let flowers = document.querySelectorAll(".fl");
+	let x = 5;
+	document.querySelector(".flower").onclick = function(){
+		for( let y = 0; y<5;  y =  y+ 1){
+			flowers[y].style.width="150px";
+		}
+	}
+	document.querySelector(".flower2").onclick = function(){
+		flowers[x].style.width= "150px";
+		x = x+1;
+	}
+
+
+	buttons[0].onclick= function(){
+	flowers[0].style.display="block"
+	buttons[0].style.display="none"
+	}
+	buttons[1].onclick= function(){
+	flowers[1].style.display="block"
+	buttons[1].style.display="none"
+	}
+	buttons[2].onclick= function(){
+	flowers[2].style.display="block"
+	buttons[2].style.display="none"
+	}
+	buttons[3].onclick= function(){
+	flowers[3].style.display="block"
+	buttons[3].style.display="none"
+	}
+	buttons[4].onclick= function(){
+	flowers[4].style.display="block"
+	buttons[4].style.display="none"
+	}
+	buttons[5].onclick= function(){
+	flowers[5].style.display="block"
+	buttons[5].style.display="none"
+	}
+	buttons[6].onclick= function(){
+	flowers[6].style.display="block"
+	buttons[6].style.display="none"
+	}
+	buttons[7].onclick= function(){
+	flowers[7].style.display="block"
+	buttons[7].style.display="none"
+	}
+	buttons[8].onclick= function(){
+	flowers[8].style.display="block"
+	buttons[8].style.display="none"
+	}
+	buttons[9].onclick= function(){
+	flowers[9].style.display="block"
+	buttons[9].style.display="none"
+	}
+</script>
+</body>
+</html>
